@@ -1,0 +1,13 @@
+{
+  "name": "crew-sync-app",
+  "version": "1.0.0",
+  "description": "Crew Signals 자동화 수익 아이디어 → 구글 시트 동기화",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win --mac"
+  },
+  "dependencies": { "googleapis": "^144.0.0" },
+  "devDependencies": { "electron": "^33.0.0", "electron-builder": "^25.0.0" },
+  "build": { "appId": "local.crew.sync", "productName": "CrewSync", "files": ["src/**", "package.json"] }
+}
